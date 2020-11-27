@@ -136,7 +136,7 @@ exports.config = {
     reporters: [
         'spec',
         ['junit', {
-            outputDir: '/',
+            outputDir: './report',
             outputFileFormat: function(options) {
                 return `results-${new Date().getDate()}-${new Date().getMonth()}-${new Date().getFullYear()}_${new Date().getHours()}:${new Date().getMinutes()}.log`;
             }
